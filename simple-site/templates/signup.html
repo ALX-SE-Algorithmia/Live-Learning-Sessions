@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Signup Page</title>
+        <!-- GOOGLE FONT (Faustina) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Faustina:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <form action="/signup" method="post" class="form__container">
+            <h3>Sign Up</h3>
+            <!-- div class="msg">{{ msg }}</!-->
+            <label for="firstname">First Name</label>
+            <input name="firstname" type="text" placeholder="First name" required id="firstname">
+
+            <label for="lastname">Last Name</label>
+            <input name="lastname" type="text" placeholder="Last name" required id="lastname">
+
+            <label for="mail">E-mail</label>
+            <input name="email" type="email" placeholder="Email Address" required id="mail">
+
+            <label for="password">Password</label>
+            <input name="password" type="password" placeholder="Password" required id="password">
+
+            <div class="form__terms">
+            <input name="terms_and_conditions" type="checkbox" required id="terms"/>
+            <label for="terms">I agree to the Terms and Conditions</label>
+            </div>
+
+            <div class="form__submit">
+            <button type="submit" value="submit">Register</button>
+            <p>Already Have An Account? <a href="/login">Login</a></p>
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
