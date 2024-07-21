@@ -4,7 +4,7 @@
 # Helping with the import and use of
 # environmental variables in this directory
 import os
-from dotenv import load_dotenv #
+from dotenv import load_dotenv
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
